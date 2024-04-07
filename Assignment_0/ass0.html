@@ -1,0 +1,46 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<style>
+    input[type=button] {
+    padding: 5px 10px;
+    margin: 8px 0;
+}
+</style>
+<meta charset="utf-8" />
+<title>Draw a blue rectangle (canvas version)</title>
+</head>
+<body onload="main()">
+<canvas id="example" width="400" height="400"> Please use a browser that supports "canvas" </canvas>
+<script src="ass0.js"></script>
+<script src="lib/cuon-matrix-cse160.js"></script>
+
+<br><label for="input_v1">v1:</label>
+<label for="x_input_v1">x</label>
+<input type="text" id="x_input_v1" name="input_v1" size="10" autocomplete="off">
+<label for="y_input_v1">y</label>
+<input type="text" id="y_input_v1" name="input_v1" size="10" autocomplete="off"><br>
+
+<br><label for="input_v2">v2:</label>
+<label for="x_input_v2">x</label>
+<input type="text" id="x_input_v2" name="input_v2" size="10" autocomplete="off">
+<label for="y_input_v2">y</label>
+<input type="text" id="y_input_v2" name="input_v2" size="10" autocomplete="off"><br>
+
+<input type="button" id="draw_button1" name="input_submit" value="Draw">
+
+<br><br><label for="operation">Operation:</label>
+<select id="operation" autocomplete="off">
+    <option value="">--Select--</option>
+    <option value="add">Add</option>
+    <option value="sub">Subtract</option>
+    <option value="div">Divide</option>
+    <option value="mult">Multiply</option>
+    <option value="magn">Magnitude</option>
+    <option value="norm">Normalize</option>
+    <option value="angle">Angle Between</option>
+    <option value="area">Area</option>
+</select>
+<label for="scalar">Scalar:</label>
+<input type="text" id="scalar" name="input_sc" size="10" autocomplete="off"><br>
+<input type="button" id="draw_button2" name="input_submit" value="Draw">
+</body> </html>
